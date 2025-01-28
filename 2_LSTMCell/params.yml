@@ -1,0 +1,27 @@
+run:
+  temperature: 1.0
+  prime_input: "My lord"
+  predict_len: 250
+
+model:
+  embed_size: 64
+  hidden_size: 128
+
+data:
+  file_path: "data/shakespeare.txt"
+  portion_size: 50
+  iters_per_epoch: 100
+
+experiment:
+  lr: 0.005
+
+trainer:
+  gpus: [1]
+  max_time: "00:00:05:00" # DD:HH:MM:SS
+  monitor: "train_loss"
+  mode: "min"
+
+app:
+  name: "2_LSTMCell"
+  logs_dir: "logs"
+  manual_seed: 1234
