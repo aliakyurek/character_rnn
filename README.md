@@ -33,5 +33,5 @@ Trained and tested on:
 * In the default configuration via `params.yml`, the model is trained on the `data/shakespeare.txt` file and limited to 5 minuutes of runtime.
 * The `train_loss` graph shows the progress and final value of the loss reached in 5 minutes for each experiment.
 ![alt text](assets/image.png)
-* We can also observe the generated text in the tensorboard
+* We can also observe the generated text in the tensorboard.
 ![alt text](assets/image2.png)
